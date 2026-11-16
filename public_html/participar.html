@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faça parte do movimento ASAS</title>
+<meta name="description" content="Formulário de candidatura e análise de perfil do negócio. Cerca de 3 minutos para preencher, com retorno em até 48 horas.">
+<link rel="canonical" href="https://www.movimentoasas.com.br/participar.html">
+<!-- Prévia ao compartilhar o link (WhatsApp, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="ASAS">
+<meta property="og:title" content="Faça parte do movimento ASAS">
+<meta property="og:description" content="Formulário de candidatura e análise de perfil do negócio. Cerca de 3 minutos para preencher, com retorno em até 48 horas.">
+<meta property="og:url" content="https://www.movimentoasas.com.br/participar.html">
+<meta property="og:image" content="https://www.movimentoasas.com.br/assets/img/compartilhar.jpg">
+<meta name="theme-color" content="#0E1C34">
+<!-- Ícones do site -->
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<!-- Fontes carregadas antes, para o texto não piscar -->
+<link rel="preload" href="assets/fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Estilos do site -->
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<!-- Atalho de acessibilidade, visível só no teclado -->
+<a class="pular" href="#conteudo">Ir para o conteúdo</a>
+<!-- ==================== TOPO: LOGO E MENU ==================== -->
+<header class="topo">
+<div class="container topo__linha">
+<a class="marca" href="index.html" aria-label="ASAS, página inicial"><img src="assets/img/simbolo-dourado.png" alt="" width="240" height="132"><span class="marca__nome" aria-hidden="true">ASAS</span></a>
+<nav class="menu" aria-label="Principal">
+<a href="index.html">Voltar ao site</a>
+</nav>
+</div>
+</header>
+<main id="conteudo" class="pagina-form">
+<div class="container pagina-form__grade">
+
+<div class="pagina-form__intro">
+<div class="rotulo">Participar</div>
+<h1>Faça parte do <span class="destaque">movimento ASAS.</span></h1>
+<div class="traco" aria-hidden="true"></div>
+<p>Formulário de candidatura e análise de perfil do negócio.</p>
+<div class="selos">
+<div class="selo-info"><strong>Cerca de 3 minutos</strong> para preencher</div>
+<div class="selo-info">Retorno em <strong>até 48 horas</strong></div>
+</div>
+</div>
+
+<!-- ==================== FORMULÁRIO (envia para enviar.php) ==================== -->
+<form class="form" action="enviar.php" method="post" accept-charset="UTF-8">
+<input type="hidden" name="formulario" value="candidatura">
+<!-- Campo invisível contra robôs. Não remover -->
+<div class="armadilha" aria-hidden="true"><label for="website_confirmacao">Não preencha este campo</label><input id="website_confirmacao" name="website_confirmacao" type="text" tabindex="-1" autocomplete="off"></div>
+<!-- Aviso de erro: o site.js mostra quando o envio falha -->
+<div class="aviso-erro" data-aviso-erro role="alert" tabindex="-1" hidden></div>
+<div class="campo"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name" maxlength="120" required></div>
+<div class="grade-2">
+<div class="campo"><label for="whatsapp">WhatsApp</label><input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" required></div>
+<div class="campo"><label for="email">E-mail corporativo</label><input id="email" name="email" type="email" autocomplete="email" maxlength="160" required></div>
+</div>
+<div class="grade-2">
+<div class="campo"><label for="empresa">Nome da empresa</label><input id="empresa" name="empresa" type="text" autocomplete="organization" maxlength="160" required></div>
+<div class="campo"><label for="setor">Setor</label><select id="setor" name="setor" required>
+<option value="">Selecione</option>
+<option>Serviços</option>
+<option>Comércio</option>
+<option>Indústria</option>
+<option>Saúde</option>
+<option>Educação</option>
+<option>Tecnologia</option>
+<option>Outro</option>
+</select></div>
+</div>
+<div class="grade-2">
+<div class="campo"><label for="site">Site da empresa</label><input id="site" name="site" type="text" inputmode="url" autocomplete="url" maxlength="200"></div>
+<div class="campo"><label for="faturamento">Faturamento médio anual</label><select id="faturamento" name="faturamento" required>
+<option value="">Selecione</option>
+<option>Até R$ 1 milhão</option>
+<option>De R$ 1 milhão a R$ 5 milhões</option>
+<option>De R$ 5 milhões a R$ 20 milhões</option>
+<option>Acima de R$ 20 milhões</option>
+</select></div>
+</div>
+<div class="grade-2">
+<div class="campo"><label for="cidade">Cidade</label><input id="cidade" name="cidade" type="text" autocomplete="address-level2" maxlength="120" required></div>
+<div class="campo"><label for="indicacao">Quem indicou você (opcional)</label><input id="indicacao" name="indicacao" type="text" maxlength="160"></div>
+</div>
+<div class="aceite"><input id="aceite" name="aceite" type="checkbox" value="sim" required><label for="aceite">Li e aceito a <a href="politica-de-privacidade.html" target="_blank" rel="noopener">política de privacidade</a>.</label></div>
+<button class="btn btn--marinho" type="submit">Enviar candidatura</button>
+</form>
+
+</div>
+</main>
+<!-- ==================== RODAPÉ ==================== -->
+<footer class="rodape rodape--simples">
+<div class="container">
+<div class="rodape__base">
+<div>© 2026 ASAS</div>
+<a href="politica-de-privacidade.html">Política de privacidade</a>
+</div>
+</div>
+</footer>
+<!-- Comportamento: agenda, filtros e avisos de erro -->
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
